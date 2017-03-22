@@ -91,7 +91,7 @@ class MySwiftClass {
 MySwiftClass().hey
 */
 
-
+/*
 // https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/Properties.html
 class MySwiftClass {
     var hello: String {
@@ -116,3 +116,39 @@ class MySwiftClass {
 }
 //MySwiftClass().helloWorld
 //MySwiftClass().world = "catface"
+*/
+
+class MySwiftClass {
+    var hello: String {
+        print("Hello Getter called!")
+        return "Hello"
+    }
+    var world: String {
+        get {
+            print("World Getter called!")
+            return "World"
+        }
+        set(value) {
+            print("Setter called with value: \(value)")
+        }
+    }
+    
+    // default getter
+    var helloWorld: String {
+        didSet {
+            print("didSet called. Value is \(helloWorld)")
+        }
+        willSet(value) {
+            print("willSet called with \(value)")
+        }
+    }
+    init() {
+        helloWorld = "Hello, World!"
+    }
+}
+MySwiftClass().helloWorld
+MySwiftClass().helloWorld = "catface"
+MySwiftClass().helloWorld
+MySwiftClass().helloWorld = MySwiftClass().hello + ", " + MySwiftClass().world + "!"
+MySwiftClass().helloWorld
+
