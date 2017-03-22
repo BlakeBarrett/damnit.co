@@ -41,7 +41,7 @@ class MySwiftClass {
         self.hey = "Hey"
     }
 }
-*/
+ */
 /*
 class MySwiftClass {
     var hey // Type annotation missing in pattern
@@ -49,7 +49,8 @@ class MySwiftClass {
         self.hey = "Hey"
     }
 }
-*/
+ */
+/*
 class MySwiftClass {
     // declared type, initialized to empty state.
     var hey = String()
@@ -59,10 +60,25 @@ class MySwiftClass {
         //self.hey = "Hey"
     }
 }
+ */
 // If I tried checking the value of: `MySwiftClass().hey`, what do you think it would be?
 //What about: 
 //MySwiftClass().hey
 //MySwiftClass().heyHey
 //MySwiftClass().heyHeyHey
+
+
+class MySwiftClass {
+    let hello = "Hello"
+    let world: String = "World"
+    
+    var hey:String
+    init() {
+//        hey = "\(hello), \(world)!"
+//        hey = hello + ", " + world + "!"
+    }
+    // return from initializer without initializing all stored properties
+}
+//MySwiftClass().hey
 
 
