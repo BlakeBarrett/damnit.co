@@ -24,9 +24,15 @@ class MySwiftClass {
     // Optional
     var hey: String?
 }
-*/
-
 class MySwiftClass {
     // Literal, type inferred
     var hey = "Hey!"
+}
+*/
+
+class MySwiftClass {
+    var hey: String
+    init() {
+        self.hey = "Hey"
+    }
 }
