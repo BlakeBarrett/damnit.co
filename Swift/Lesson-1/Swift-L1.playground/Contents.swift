@@ -19,19 +19,31 @@ playground = "playground"
     // Literal
     var hey: String = "Hey!"
  }
-
+ */
+/*
 class MySwiftClass {
     // Optional
     var hey: String?
 }
+ 
+ */
+/*
 class MySwiftClass {
     // Literal, type inferred
     var hey = "Hey!"
 }
-*/
-
+ */
+/*
 class MySwiftClass {
+    // Typed var, initialized in initializer.
     var hey: String
+    init() {
+        self.hey = "Hey"
+    }
+}
+*/
+class MySwiftClass {
+    var hey // Type annotation missing in pattern
     init() {
         self.hey = "Hey"
     }
