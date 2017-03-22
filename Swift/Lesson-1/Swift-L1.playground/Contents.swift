@@ -13,6 +13,46 @@ playground = "playground"
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // But as is always the case, easier said than done.
 /*
  class MySwiftClass {
@@ -163,8 +203,7 @@ msc.helloWorld = "\((msc.hello != nil) ? msc.hello : "Hello"), \(msc.world ?? "W
 //print(msc.helloWorld)
 //let stringsMatch = (msc.helloWorld! == "Hello, World!")
 */
-
-
+/*
 class MySpaghettiClass {
     let interrorBang = "‽"
     
@@ -214,6 +253,6 @@ MySpaghettiClass().getFirstName()
 MySpaghettiClass(firstName: "", lastName: nil).userName()
 // how do we fix this?
 MySpaghettiClass().getName().lowercased()
-
+*/
 
 
