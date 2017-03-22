@@ -152,7 +152,7 @@ MySwiftClass().helloWorld
 MySwiftClass().helloWorld = MySwiftClass().hello + ", " + MySwiftClass().world + "!"
 MySwiftClass().helloWorld
 */
-
+/*
 class MySwiftClass {
     var hello, world, helloWorld: String?
 }
@@ -162,4 +162,58 @@ msc.helloWorld = "\((msc.hello != nil) ? msc.hello : "Hello"), \(msc.world ?? "W
 //msc.helloWorld
 //print(msc.helloWorld)
 //let stringsMatch = (msc.helloWorld! == "Hello, World!")
+*/
+
+
+class MySpaghettiClass {
+    let interrorBang = "‽"
+    
+    var firstName, lastName: String?
+
+    init() {
+        
+    }
+    
+    init(firstName: String, lastName: String) {
+        self.firstName = firstName
+        self.lastName = lastName
+    }
+
+    init(firstName: String, lastName: String?) {
+        self.firstName = firstName
+        if let lastName = lastName {
+            self.lastName = lastName
+        }
+    }
+
+    // There are a few things wrong here.
+    // Lets figure this one out together!
+    func getName() -> String? {
+        return firstName + lastName
+    }
+    
+    func userName() -> String {
+        return "\(lastName), \(firstName)";
+    }
+    
+    func getFirstName() -> String {
+        if let _ = self.firstName {
+            return firstName!
+        }
+        return ""
+    }
+    
+    func getLastName() -> String {
+        guard let lastName = lastName else {
+            return self.interrorBang
+        }
+        return lastName
+    }
+}
+MySpaghettiClass().getFirstName()
+MySpaghettiClass(firstName: "", lastName: nil).userName()
+// how do we fix this?
+MySpaghettiClass().getName().lowercased()
+
+
 
