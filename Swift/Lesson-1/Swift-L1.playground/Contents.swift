@@ -11,10 +11,16 @@ var hello: String = "Hello!"
 var playground: String
 playground = "playground"
 
-// But as is always the case, easier said than done.
 
+
+// But as is always the case, easier said than done.
 /*
  class MySwiftClass {
- var hey: String
+    // Literal
+    var hey: String = "Hey!"
  }
- */
+*/
+class MySwiftClass {
+    // Optional
+    var hey: String?
+}
