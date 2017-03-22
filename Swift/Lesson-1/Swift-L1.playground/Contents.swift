@@ -67,7 +67,7 @@ class MySwiftClass {
 //MySwiftClass().heyHey
 //MySwiftClass().heyHeyHey
 
-
+/*
 class MySwiftClass {
     let hello = "Hello"
     let world: String = "World"
@@ -80,5 +80,12 @@ class MySwiftClass {
     // return from initializer without initializing all stored properties
 }
 //MySwiftClass().hey
-
+ */
+class MySwiftClass {
+    static let hello = "Hello"
+    static let world: String = "World"
+    
+    var hey = "\(hello), \(world)!"
+}
+MySwiftClass().hey
 
