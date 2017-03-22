@@ -42,9 +42,27 @@ class MySwiftClass {
     }
 }
 */
+/*
 class MySwiftClass {
     var hey // Type annotation missing in pattern
     init() {
         self.hey = "Hey"
     }
 }
+*/
+class MySwiftClass {
+    // declared type, initialized to empty state.
+    var hey = String()
+    var heyHey: String = String()
+    var heyHeyHey: String? = String()
+    init() {
+        //self.hey = "Hey"
+    }
+}
+// If I tried checking the value of: `MySwiftClass().hey`, what do you think it would be?
+//What about: 
+//MySwiftClass().hey
+//MySwiftClass().heyHey
+//MySwiftClass().heyHeyHey
+
+
