@@ -19,8 +19,14 @@ playground = "playground"
     // Literal
     var hey: String = "Hey!"
  }
-*/
+
 class MySwiftClass {
     // Optional
     var hey: String?
+}
+*/
+
+class MySwiftClass {
+    // Literal, type inferred
+    var hey = "Hey!"
 }
