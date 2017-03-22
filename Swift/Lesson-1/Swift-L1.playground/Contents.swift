@@ -117,7 +117,7 @@ class MySwiftClass {
 //MySwiftClass().helloWorld
 //MySwiftClass().world = "catface"
 */
-
+/*
 class MySwiftClass {
     var hello: String {
         print("Hello Getter called!")
@@ -151,4 +151,15 @@ MySwiftClass().helloWorld = "catface"
 MySwiftClass().helloWorld
 MySwiftClass().helloWorld = MySwiftClass().hello + ", " + MySwiftClass().world + "!"
 MySwiftClass().helloWorld
+*/
+
+class MySwiftClass {
+    var hello, world, helloWorld: String?
+}
+let msc = MySwiftClass()
+msc.helloWorld = "\(msc.hello), \(msc.world)!"
+msc.helloWorld = "\((msc.hello != nil) ? msc.hello : "Hello"), \(msc.world ?? "World")!"
+//msc.helloWorld
+//print(msc.helloWorld)
+//let stringsMatch = (msc.helloWorld! == "Hello, World!")
 
