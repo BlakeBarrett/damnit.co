@@ -81,6 +81,7 @@ class MySwiftClass {
 }
 //MySwiftClass().hey
  */
+/*
 class MySwiftClass {
     static let hello = "Hello"
     static let world: String = "World"
@@ -88,4 +89,30 @@ class MySwiftClass {
     var hey = "\(hello), \(world)!"
 }
 MySwiftClass().hey
+*/
 
+
+// https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/Properties.html
+class MySwiftClass {
+    var hello: String {
+//        print("Hello Getter called!")
+        return "Hello"
+    }
+    var world: String {
+        get {
+//            print("World Getter called!")
+            return "World"
+        }
+        set(value) {
+//            print("Setter called with value: \(value)")
+        }
+    }
+    
+    // default getter
+    var helloWorld: String {
+//        print("Hey Getter called!")
+        return "\(hello), \(world)!"
+    }
+}
+//MySwiftClass().helloWorld
+//MySwiftClass().world = "catface"
