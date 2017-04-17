@@ -38,6 +38,10 @@ class Example1 {
 var getFirstValueIn:([Int]) -> Int = { (numbers: [Int]) in
     return numbers.first!
 }
+var lastValue:Int?
+let captureLastValueIn:(Int) -> Void = { i in
+    lastValue = i
+}
 
 let values = [3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5, 8, 9, 7]
 print("The first value is \(getFirstValueIn(values))")
@@ -48,3 +52,6 @@ for i in values {
 values.forEach { (i:Int) in
 //    print(i)
 }
+
+values.forEach(captureLastValueIn)
+print(lastValue)
