@@ -54,4 +54,41 @@ values.forEach { (i:Int) in
 }
 
 values.forEach(captureLastValueIn)
-print(lastValue)
+//print(lastValue)
+
+
+
+//
+// convenience initializers
+//
+
+class Pixel {
+    
+    var color: UIColor
+    var x: Int
+    var y: Int
+    
+    convenience init(x: Int, y: Int, color: UIColor = UIColor.magenta) {
+        self.init()
+        self.x = x
+        self.y = y
+        self.color = color
+    }
+    
+    required init(color: UIColor = UIColor.clear) {
+        self.x = 0
+        self.y = 0
+        self.color = color
+    }
+}
+
+
+
+// extensions
+
+extension Pixel {
+    func toString() {
+        print("Pixel(x: \(x), y: \(y), color: \(color))")
+    }
+}
+
