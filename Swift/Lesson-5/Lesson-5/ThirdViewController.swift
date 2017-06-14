@@ -1,6 +1,6 @@
 //
 //  ThirdViewController.swift
-//  Lesson-4
+//  Lesson-5
 //
 //  Created by Blake Barrett on 5/31/17.
 //
