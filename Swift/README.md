@@ -2,7 +2,7 @@
 
 ## About these "Lessons"?
 
-I do not intend or expect these lessons to be a comprehensive (or even a good) way to learn Swift. It is intend to be the interesting things you probably wouldn't know by just reading a random blob of sourcecode while poking around. 
+I do not intend or expect these lessons to be a comprehensive (or even a good) way to learn Swift. It is intended to be the interesting things you probably wouldn't know by just reading a random blob of sourcecode while poking around. 
 
 ### This could be titled, **_`A confusing introduction to the cool parts of Swift 3.`_**
 
@@ -42,3 +42,4 @@ Here is a list of things I'd like to cover in this course.
  
  ```
  
+ There is also the extraneous "Lesson-5", which are answers to iOS specific questions people had when taking this "course".
