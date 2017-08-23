@@ -44,7 +44,7 @@ let captureLastValueIn:(Int) -> Void = { i in
 }
 
 let values = [3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5, 8, 9, 7]
-print("The first value is \(getFirstValueIn(values))")
+//print("The first value is \(getFirstValueIn(values))")
 
 for i in values {
 //    print(i)
@@ -82,6 +82,8 @@ class Pixel {
     }
 }
 
+// For more on convenience intitializers, check out Apple's documentation
+// here: https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/Initialization.html#//apple_ref/doc/uid/TP40014097-CH18-ID217
 
 
 // extensions
